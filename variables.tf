@@ -1,4 +1,4 @@
-
+#variables used in whole code 
 variable "region" {
   description = "AWS Deployment region.."
   default = "ap-south-1"
