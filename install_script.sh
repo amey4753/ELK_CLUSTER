@@ -19,6 +19,12 @@ echo "discovery.zen.hosts_provider: master" >> /etc/elasticsearch/elasticsearch.
 echo "cloud.aws.region: ap-south-1" >> /etc/elasticsearch/elasticsearch.yml
 echo "network.host: _master_" >> /etc/elasticsearch/elasticsearch.yml
 sudo chkconfig --add elasticsearch
+
+sudo update-rc.d elasticsearch defaults 95 10
+
+sudo /etc/init.d/elasticsearch start
 sudo service elasticsearch start
 
 echo "Node setup finished!"
+#service is running 
+curl http://localhost:9200 
