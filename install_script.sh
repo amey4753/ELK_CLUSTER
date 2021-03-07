@@ -5,8 +5,8 @@ sudo curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-ke
 sudo echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
 sudo apt-get update
 sudo apt install elasticsearch
-echo ES_JAVA_OPTS="\"-Xms1g -Xmx1g\"" >> /etc/elasticsearch
-echo MAX_LOCKED_MEMORY=unlimited >> /etc/elasticsearch
+echo ES_JAVA_OPTS="\"-Xms1g -Xmx1g\"" >> /etc/elasticsearch/elasticsearch.yml
+echo MAX_LOCKED_MEMORY=unlimited >> /etc/elasticsearch/elasticsearch.yml
 
 echo -e "yes\n" | /usr/share/elasticsearch/bin/elasticsearch-plugin install discovery-ec2
 
