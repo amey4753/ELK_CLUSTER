@@ -31,5 +31,7 @@ AWS CLI // to connect to aws
          aws configure :
          provide acess key and and secret access key devopsadmin
          
-         
+#INSTALL_SCRIPT
+
+installs elastic search on master and node 
 
