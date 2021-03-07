@@ -1,4 +1,4 @@
-//AWS 
+
 
 environment = "ELASTIC_SEARCH_CLUSTER"
 
