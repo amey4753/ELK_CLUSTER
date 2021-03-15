@@ -43,6 +43,7 @@ installs elastic search on master and node
 
 5.  How would you monitor this instance? What metrics would you monitor?
 >> curl localhost:9200/_cat/health
+>> Use elb or ha proxy load balancer with ec2 instances to check http 200ok  response as metric 
 
 7.  Could you extend your solution to launch a secure cluster of ElasticSearch nodes? What would need to change to support this use case?
 >> Yes plz ref Q3
